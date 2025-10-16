@@ -1,0 +1,65 @@
+{
+  "name": "wgrib2js",
+  "version": "1.0.1",
+  "description": "JavaScript GRIB2 reader library with full wgrib2 compatibility, including pattern matching, multiple longitude formats, and automatic wind calculations",
+  "main": "dist/grib-reader.cjs.js",
+  "module": "dist/grib-reader.esm.js",
+  "browser": "dist/grib-reader.umd.js",
+  "unpkg": "dist/grib-reader.min.js",
+  "jsdelivr": "dist/grib-reader.min.js",
+  "exports": {
+    ".": {
+      "import": "./dist/grib-reader.esm.js",
+      "require": "./dist/grib-reader.cjs.js",
+      "browser": "./dist/grib-reader.umd.js",
+      "default": "./dist/grib-reader.cjs.js"
+    },
+    "./min": "./dist/grib-reader.min.js",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build",
+    "test": "node validation.js data/meteo.grib"
+  },
+  "sideEffects": false,
+  "keywords": [
+    "grib",
+    "grib2",
+    "wgrib2",
+    "meteorology",
+    "weather",
+    "forecast",
+    "climate",
+    "wind",
+    "atmospheric-data",
+    "pattern-matching",
+    "interpolation",
+    "geospatial"
+  ],
+  "author": "Your Name <selim@openlinux.fr>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alizarion/grib2js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alizarion/grib2js/issues"
+  },
+  "homepage": "https://github.com/alizarion/grib2js#readme",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "grib2-simple": "^1.1.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup": "^4.52.4"
+  }
+}

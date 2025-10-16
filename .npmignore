@@ -1,0 +1,26 @@
+# Claude Code files
+CHECKPOINT.md
+.claude/
+
+# Test and development files
+validation.js
+test-*.js
+data/
+dataset/
+dl/
+
+# Build configuration
+rollup.config.js
+
+# IDE
+.idea/
+
+# Git
+.git/
+.gitignore
+
+# OS files
+.DS_Store
+
+# Node modules (will be installed by users)
+node_modules/
