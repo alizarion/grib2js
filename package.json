@@ -1,6 +1,6 @@
 {
   "name": "wgrib2js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "JavaScript GRIB2 reader library with full wgrib2 compatibility, including pattern matching, multiple longitude formats, and automatic wind calculations",
   "main": "dist/grib-reader.cjs.js",
   "module": "dist/grib-reader.esm.js",
